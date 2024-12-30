@@ -31,5 +31,4 @@ Options -Indexes
 #    https://httpd.apache.org/docs/2.4/mod/mod_dir.html#page-header
 # ------------------------------------------------------------------------------
 
-
 DirectoryIndex index.php
