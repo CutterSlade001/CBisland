@@ -3,4 +3,6 @@
 require dirname(__DIR__) . '/config/config.php';
 
 
-render('index.php', ['msg' => 'Works !']);
+render('index.php', [
+    'msg' => 'Works !',
+]);

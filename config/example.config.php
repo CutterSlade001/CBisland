@@ -12,7 +12,6 @@ const APP_SERVICES  = APP_ROOT . '/services';
 const APP_TEMPLATES = APP_ROOT . '/templates';
 
 
-
 // ------------------------------------------------------------------------------
 // -- Database configuration
 // ------------------------------------------------------------------------------
@@ -20,6 +19,7 @@ const APP_TEMPLATES = APP_ROOT . '/templates';
 const DB = [
     'name'    => '', // Database name
     'pass'    => '',
+    'user'    => '',
     'host'    => '127.0.0.1',
     'port'    => 3306,
     'options' => [],
