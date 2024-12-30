@@ -38,35 +38,3 @@ function query(string $query): mysqli_result
     return $mysqli->query($query);
 }
 
-
-/**
- * @param string $query
- * @param array  $params
- *
- * @return mysqli_result
- */
-function runPreparedQuery(string $query, array $params): mysqli_result
-{
-    $mysqli = connect();
-
-    $stmt = $mysqli->prepare($query);
-    $stmt->execute($params);
-
-    return $stmt->get_result();
-}
-
-
-/**
- * Closes an active MySQLi database connection.
- *
- * This function terminates the provided MySQLi connection and releases
- * any associated resources.
- *
- * @param mysqli $mysqli The active MySQLi database connection instance to be closed.
- *
- * @return void No value is returned by this function.
- */
-function disconnect(mysqli $mysqli): void
-{
-    $mysqli->close();
-}
