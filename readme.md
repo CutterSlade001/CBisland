@@ -7,7 +7,7 @@ Deliberately, tools like Composer, the PDO extension, etc., were omitted.
 
 ## Requirements
 
-- PHP 8.3
+- PHP 8.2
 - MySQLi extension
 - Apache
 
