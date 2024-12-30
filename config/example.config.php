@@ -1,15 +1,14 @@
 <?php declare(strict_types=1);
 
-
 // ------------------------------------------------------------------------------
 // -- Paths
 // ------------------------------------------------------------------------------
 
 define('APP_ROOT', dirname(__DIR__));
 
-const APP_PUBLIC    = APP_ROOT . '/public';
-const APP_SERVICES  = APP_ROOT . '/services';
-const APP_TEMPLATES = APP_ROOT . '/templates';
+const APP_PUBLIC    = APP_ROOT . DIRECTORY_SEPARATOR . 'public';
+const APP_SERVICES  = APP_ROOT . DIRECTORY_SEPARATOR . 'services';
+const APP_TEMPLATES = APP_ROOT . DIRECTORY_SEPARATOR . 'templates';
 
 
 // ------------------------------------------------------------------------------

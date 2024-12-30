@@ -1,22 +1,44 @@
 <?php declare(strict_types=1);
 
 /**
- * Renders the specified template with the provided data.
+ * Renders a template with the provided data and either returns or outputs the result.
  *
- * @param string     $template The name of the template file to render.
- * @param array|null $data     An associative array of data to be used within the template. Optional.
+ * @param string     $template     The name of the template file to render.
+ * @param array|null $data         An optional associative array of data to pass to the template.
+ * @param bool|null  $returnOutput Whether to return the rendered output as a string (if true) or output it directly (if false).
  *
- * @return void
+ * @return string|null The rendered template as a string if $returnOutput is true, or null if it is displayed directly.
  * @throws Exception
  */
-function render(string $template, ?array $data = []): void
+function render(string $template, ?array $data = [], ?bool $returnOutput = false): string|null
 {
-    extract($data);
+    /**
+     *
+     *
+     * @param string     $template
+     * @param array|null $data
+     *
+     * @return string
+     */
+    $_render = function (string $template, ?array $data = []): string {
+        ob_start();
+        extract($data);
+        require $template;
+
+        return ob_get_clean();
+    };
 
     $_tmpl = APP_TEMPLATES . DIRECTORY_SEPARATOR . $template;
 
-    if (! file_exists($_tmpl))
+    if (!file_exists($_tmpl)) {
         throw new Exception('Template not found: ' . $_tmpl);
+    }
 
-    require $_tmpl;
+    if ($returnOutput) {
+        return $_render($_tmpl, $data);
+    }
+
+    print $_render($_tmpl, $data);
+
+    return null;
 }
