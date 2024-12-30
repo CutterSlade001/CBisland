@@ -38,6 +38,24 @@ function query(string $query): mysqli_result
     return $mysqli->query($query);
 }
 
+
+/**
+ * @param string $query
+ * @param array  $params
+ *
+ * @return mysqli_result
+ */
+function runPreparedQuery(string $query, array $params): mysqli_result
+{
+    $mysqli = connect();
+
+    $stmt = $mysqli->prepare($query);
+    $stmt->execute($params);
+
+    return $stmt->get_result();
+}
+
+
 /**
  * Closes an active MySQLi database connection.
  *
