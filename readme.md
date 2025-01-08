@@ -1,4 +1,4 @@
-# PHP Project Template
+# PHP Project Codename "CBisland" a minimal viable Point&Click Adventure
 
 As part of a PHP course, the need for a starter template arose.  
 Given the participants' level of knowledge, this small project was created as a starting aid.
