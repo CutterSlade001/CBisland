@@ -1,46 +1,39 @@
-# PHP Project Codename "CBisland" a minimal viable Point&Click Adventure
+# PHP Project
 
-As part of a PHP course, the need for a starter template arose.  
-Given the participants' level of knowledge, this small project was created as a starting aid.
+<img alt="MonkeyIsland2_Baumstammweitwurf_720p.jpg" src="public/img/MonkeyIsland2_Baumstammweitwurf_720p.jpg" width="480"/>
 
-Deliberately, tools like Composer, the PDO extension, etc., were omitted.
+## Codename "CBisland" a minimal viable Point&Click Adventure
 
-## Requirements
+As part of a PHP course, the task was to create a PHP-project which uses a MySql Database and has a hashed login and register function.
 
-- PHP 8.2
-- MySQLi extension
-- Apache
+Deliberately, tools like Composer, the PDO extension, Java/Script etc., were omitted.
 
-## Setting up the configuration file
-
-Copy or rename `example.config.php` to `config.php` in the `config` directory.  
-This will serve as the main configuration file for the application.
-
-## Setting up Apache
-
-To point Apache to the public folder (document root), set up a virtual host  
-within your Apache vhost file as follows:
-
-Replace `$PATH_TO_PUBLIC_FOLDER` with the absolute path to the public folder in your system.
-
-```apacheconf
-# File: http-vhosts.conf
-
-<VirtualHost 127.0.0.1:8009>
-    DocumentRoot "$PATH_TO_PUBLIC_FOLDER"
-    <Directory "$PATH_TO_PUBLIC_FOLDER">
-        Options FollowSymLinks
-        AllowOverride all
-        Require local
-    </Directory>
-</VirtualHost>
-```
-
-If necessary, replace `127.0.0.1:8009` with your desired configuration. Otherwise, make sure  
-Apache is set up to listen on localhost (127.0.0.1) and port 8009:
-
-```apacheconf
-# File: httpd.conf
-
-Listen 127.0.0.1:8009
-```
+## Requirements (rules of thumb)
+Dynamic web-page with hashed login, user account creation, CSS
+- DB: 
+  - 2 small tables with master/detail link
+  - primary and secondary key definitions
+  - relations with referential integrity
+- Logic:
+  - PHP-programms
+  - external included/required functions (helper?)
+  - if neccessary JavaScript
+- Frontend:
+  - HTML for page structure
+  - design in external .CSS (because of time constrains no responsive design required)
+  - if neccessary JavaScript
+  - maybe JavaScript in parts
+## Excecution
+- Timeframe
+  - 10 working days
+- ERM and testing "on paper"
+- planning of the project structure
+- DB creation
+  - filling with test data and query testing
+- PHP Coding
+  - realising DB queries with tes data directly from PHP-Code
+- suggested code freeze after 7 days
+  - followed by testing and presentation preparations
+## Presentation
+  - max. 15 min
+  - feedback
