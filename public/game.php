@@ -6,8 +6,13 @@ require dirname(__DIR__) . '/bootstrap.php';
 
 error_log('test');
 
-render('index.php', [
+render('game.php', [
     'name' => 'marcus',
     'age' => 22,
-]);
-   
+    'bkgimg' => 'SQL?', 
+    
+]); 
+ 
+    
+  
+ 

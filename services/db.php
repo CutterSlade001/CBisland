@@ -38,3 +38,4 @@ function query(string $query): mysqli_result
     return $mysqli->query($query);
 }
 
+
