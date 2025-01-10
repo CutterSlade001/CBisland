@@ -9,5 +9,6 @@ error_log('test');
 render('index.php', [
     'name' => 'marcus',
     'age' => 22,
+    'loginform' => $_POST,
 ]);
    
