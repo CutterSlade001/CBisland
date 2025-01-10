@@ -10,8 +10,8 @@
     <h2>Bitte einloggen, lieber <?= $name ?> oder Account erstellen.</h2>
     <form method="POST" action="<?= BASE_URL ?>/login.php">
 
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="password" name="password" placeholder="Passwort" required><br>
+        <input type="text" name="username" value="Username" required>
+        <input type="password" name="password" value="Passwort" required><br>
         <input type="submit" value="Anmelden">
         <input type="reset" value="reset form">
         
@@ -19,3 +19,5 @@
 </div>
 </body>
 </html>
+<?php
+print_r(DB);

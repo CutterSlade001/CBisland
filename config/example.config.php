@@ -16,9 +16,9 @@ const APP_TEMPLATES = APP_ROOT . '/templates';
 // ------------------------------------------------------------------------------
 
 const DB = [
-    'name'    => '', // Database name
+    'name'    => 'cbisland', // Database name
     'pass'    => '',
-    'user'    => '',
+    'user'    => 'root',
     'host'    => '127.0.0.1',
     'port'    => 3306,
     'options' => [],

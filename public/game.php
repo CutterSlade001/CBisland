@@ -13,6 +13,4 @@ render('game.php', [
     
 ]); 
  
-    
-  
  
