@@ -32,7 +32,7 @@ Dynamic web-page with hashed login, user account creation, CSS
 - DB creation
   - filling with test data and query testing
 - PHP Coding
-  - realising DB queries with tes data directly from PHP-Code
+  - realising DB queries with test data directly from PHP-Code
 - suggested code freeze after 7 days
   - followed by testing and presentation preparations
 ## Presentation
