@@ -1,6 +1,6 @@
 # PHP Project
 
-<img alt="MonkeyIsland2_Baumstammweitwurf_720p.jpg" src="public/img/MonkeyIsland2_Baumstammweitwurf_720p.jpg" width="480"/>
+<img alt="MonkeyIsland2_Baumstammweitwurf_720p.jpg" src="public/img/Monkey_Island_2_Weitspucken_720p.jpg" width="480"/>
 
 ## Codename "CBisland" a minimal viable Point&Click Adventure
 

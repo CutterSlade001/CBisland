@@ -1,27 +1,25 @@
-<?php 
-declare(strict_types=1);
+<?php
 
-/**
- * @var string $title
- * @var string $message
- * @var string $action   (default is LOGIN_URL)
- */
 
-?><html lang="de">
+?><html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $title  ?></title>
-    <link rel="stylesheet" href="/css/styles.css"
+    <title>Login to CBisland</title>
+    <link rel="stylesheet" href="css/style.css"
 </head>
 <body>
 <div class="defaultspan">
-    <h2><?= $message ?></h2>
-    <form method="POST" action="<?= $action ?? LOGIN_URL ?>">
+    
+    <h1><?= $welcomeMsg ?? 'Hallo' ?></h1>
+    <h2>  Bitte einloggen oder Account erstellen.</h2>
+    <form method="POST" action="">
+
         <input type="text" name="username" value="Username" required>
         <input type="password" name="password" value="Passwort" required><br>
         <input type="submit" value="Anmelden">
         <input type="reset" value="reset form">
+        
     </form>
 </div>
 </body>

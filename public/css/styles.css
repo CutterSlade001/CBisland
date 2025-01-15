@@ -1,35 +1,55 @@
+/*
+CSS RESET
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI Light", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 select {
     margin-right: 20px;
     overflow-y: auto;
-    text-align:center;
+    text-align: center;
     width: 55px;
 }
-.defaultspan{
+
+.defaultspan {
+    width: fit-content;
+    height: fit-content;
     background-color: aliceblue;
     border-style: double;
     border-width: 5px;
 }
-.sceneheader{
+
+.sceneheader {
+    width: 1000px;
+    height: fit-content;
     background-color: aliceblue;
     border-style: double;
     border-width: 5px;
 }
-.gamediv{
+
+.gamediv {
+    width: fit-content;
+    height: fit-content;
     background-color: aliceblue;
     border-style: double;
     border-width: 5px;
 }
-.scenediv{
+
+.scenefooter {
+    width: fit-content;
+    height: fit-content;
     background-color: aliceblue;
     border-style: double;
     border-width: 5px;
 }
-.scenefooter{
-    background-color: aliceblue;
-    border-style: double;
-    border-width: 5px;
-}
-.scenequestlogdiv{
+
+.scenequestlogdiv {
+    width: fit-content;
+    height: fit-content;
     background-color: blueviolet;
     border-style: double;
     border-width: 5px;

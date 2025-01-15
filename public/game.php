@@ -4,7 +4,7 @@ require dirname(__DIR__) . '/bootstrap.php';
 
 
 
-error_log('test');
+error_log('Aufruf pubplic game.php');
 
 render('game.php', [
     'name' => 'marcus',
